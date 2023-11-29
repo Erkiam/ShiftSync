@@ -1,0 +1,232 @@
+.right {
+  position: absolute;
+  top: 0;
+  left: 959px;
+  background-color: var(--color-white);
+  width: 960px;
+  height: 1080px;
+}
+.current-calender-child {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 1920px;
+  height: 1px;
+  opacity: 0.1;
+  mix-blend-mode: normal;
+}
+.rectangle2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-steelblue-100);
+}
+.save-and-continue {
+  position: absolute;
+  top: calc(50% - 11.5px);
+  left: 28.33%;
+}
+.group-5-copy-2,
+.rectangle-group {
+  position: absolute;
+  width: 360px;
+  height: 45px;
+}
+.rectangle-group {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+}
+.group-5-copy-2 {
+  top: 1317px;
+  left: 916px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.rectangle3 {
+  position: absolute;
+  height: 102.22%;
+  width: 100.28%;
+  top: -1.11%;
+  right: -0.14%;
+  bottom: -1.11%;
+  left: -0.14%;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+}
+.edit-resume {
+  position: absolute;
+  top: calc(50% - 10.5px);
+  left: 36.81%;
+}
+.rectangle-container {
+  position: absolute;
+  top: 1317px;
+  left: 526px;
+  border-radius: var(--br-9xs);
+  width: 360px;
+  height: 45px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-steelblue-100);
+}
+.ion-android-search-ionicons {
+  position: absolute;
+  top: 39px;
+  left: 1218px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-actor);
+  color: var(--color-darkslategray-100);
+  display: none;
+}
+.icons8-notification {
+  position: absolute;
+  top: 39px;
+  left: 1681px;
+  width: 16px;
+  height: 20px;
+  opacity: 0.32;
+  mix-blend-mode: normal;
+}
+.current-calender-item,
+.shiftsync5 {
+  position: absolute;
+  top: 118px;
+  left: 1267px;
+  width: 4.4px;
+  height: 16px;
+}
+.shiftsync5 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #6c6c6c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 1px #acbeff;
+}
+.shiftsync4 {
+  position: absolute;
+  top: -6px;
+  left: 11px;
+  width: 576px;
+  height: 131px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 70px;
+}
+.rectangle4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-mid-5);
+  background-color: var(--color-darkslategray-400);
+}
+.adobe-xd {
+  position: absolute;
+  top: calc(50% - 10.5px);
+  left: 6.86%;
+}
+.group-a {
+  text-decoration: none;
+  position: absolute;
+  height: 3.24%;
+  width: 5.31%;
+  top: 89.35%;
+  right: 6.72%;
+  bottom: 7.41%;
+  left: 87.97%;
+  border-radius: var(--br-mid-5);
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.adobe-xd1 {
+  position: absolute;
+  top: calc(50% - 9.5px);
+  left: 16.67%;
+}
+.rectangle-parent1 {
+  text-decoration: none;
+  position: absolute;
+  height: 3.24%;
+  width: 5.31%;
+  top: 89.35%;
+  right: 88.13%;
+  bottom: 7.41%;
+  left: 6.56%;
+  border-radius: var(--br-mid-5);
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.b,
+.b1,
+.b2,
+.b3,
+.b4 {
+  position: absolute;
+  height: 1.63%;
+  width: 2.67%;
+  top: 25%;
+  left: 2.08%;
+  display: none;
+  font-family: var(--font-inter);
+  align-items: center;
+}
+.b1,
+.b2,
+.b3,
+.b4 {
+  height: 1.61%;
+  width: 2.69%;
+  top: 25.28%;
+  left: 42.08%;
+}
+.b2,
+.b3,
+.b4 {
+  left: 82.19%;
+}
+.b3,
+.b4 {
+  height: 1.63%;
+  width: 2.58%;
+  top: 25.46%;
+  left: 22.03%;
+}
+.b4 {
+  height: 1.61%;
+  width: 2.69%;
+  top: 25.28%;
+  left: 62.03%;
+}
+.current-calender {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+  color: var(--color-lightskyblue-100);
+  font-family: var(--font-poppins);
+}

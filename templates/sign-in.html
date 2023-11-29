@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./sign-in.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Actor:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material Icons:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-in1">
+      <div class="frame-group">
+        <div class="frame-wrapper">
+          <div class="frame-copy-group">
+            <input class="frame-copy2" type="text" />
+
+            <input class="frame-child1" type="text" />
+
+            <a
+              class="group-5-copy1"
+              href="./post-availability.html"
+              id="group5Copy"
+            >
+              <div class="log-in-wrapper">
+                <b class="log-in">
+                  <p class="sign-in2">Sign In</p>
+                </b>
+              </div>
+            </a>
+            <div class="group-5-copy-2-parent">
+              <div class="group-5-copy-21">
+                <b class="forgot-password">Forgot Password?</b>
+              </div>
+              <div class="oval-container">
+                <div class="oval2"></div>
+                <div class="stay-signed-in-wrapper">
+                  <b class="log-in">Stay Signed in</b>
+                </div>
+              </div>
+            </div>
+            <div class="log-in1">Sign In</div>
+          </div>
+        </div>
+        <div class="frame-container">
+          <div class="dont-have-an-accoun-parent">
+            <div class="dont-have-an">Don’t have an account?</div>
+            <div class="group-3-copy1" id="group3Copy">
+              <div class="rectangle12"></div>
+              <a class="sign-up2" href="./sign-up.html">Sign Up</a>
+            </div>
+          </div>
+          <div class="staffmerge-i-container">
+            <div class="log-in">© 2020 StaffMerge, Inc.</div>
+          </div>
+        </div>
+      </div>
+      <div class="connect-merge-work-parent1">
+        <b class="connect-merge-work-container2">
+          <p class="sign-in2">Connect.</p>
+          <p class="sign-in2">Merge. Work</p>
+        </b>
+        <div class="frame4">
+          <div class="post-job2">Post Job</div>
+        </div>
+        <div class="frame5">
+          <div class="post-job2">Get Hired</div>
+        </div>
+      </div>
+      <div class="left2">
+        <img
+          class="removebg-preview-icon2"
+          alt=""
+          src="./public/1718removebgpreview@2x.png"
+        />
+
+        <b class="connect-merge-work2">Connect. Merge. Work</b>
+        <div class="shiftsync10" id="sHIFTSYNCContainer">
+          <b class="shiftsync11">SHIFTSYNC</b>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var group5Copy = document.getElementById("group5Copy");
+      if (group5Copy) {
+        group5Copy.addEventListener("click", function (e) {
+          window.location.href = "./post-availability.html";
+        });
+      }
+      
+      var group3Copy = document.getElementById("group3Copy");
+      if (group3Copy) {
+        group3Copy.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      
+      var sHIFTSYNCContainer = document.getElementById("sHIFTSYNCContainer");
+      if (sHIFTSYNCContainer) {
+        sHIFTSYNCContainer.addEventListener("click", function (e) {
+          window.location.href = "employer-homepage.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}" />
+</head>
+<body>
+  <form>
+    <input type="button" id="executeAlert" value="Don't click me">
+  </form>
+  <table class="tg" id="targetTable">
+<thead>
+  <tr>
+    <th class="tg-0lax">User:</th>
+    <th class="tg-0lax">Date:</th>
+    <th class="tg-0lax">Actions:</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+    <script>
+      var dashboardData = {};
+      function GetTableData(){
+
+
+        let xhr = new XMLHttpRequest();
+         // Making our connection
+        let url = 'http://127.0.0.1:5000/GetDashboardData';
+        xhr.open("GET", url, true);
+
+        // function execute after request is successful
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+               dashboardData = JSON.parse(this.responseText);
+               console.log(dashboardData);
+               console.log(dashboardData.length);
+                  var target = document.getElementById("targetTable");
+                       let i = 0;
+         while (i < dashboardData.length){
+            var newRow = target.insertRow();
+            var newNameCell = newRow.insertCell();
+            var newDateCell = newRow.insertCell();
+            var newName = document.createTextNode(dashboardData[i]['Name']);
+            var newDate = document.createTextNode(dashboardData[i]['Date']);
+
+            newNameCell.appendChild(newName);
+            newDateCell.appendChild(newDate);
+            newRow.appendChild(newNameCell);
+            newRow.appendChild(newDateCell);
+
+            target.appendChild(newRow);
+            i++;
+         }
+            }
+        }
+        // Sending our request
+        xhr.send();
+      }
+
+
+      var executeButton = document.getElementById("executeAlert");
+      if(executeButton){
+        executeButton.addEventListener("click", function(e){
+         GetTableData();
+
+         console.log(dashboardData);
+
+        })
+      }
+
+
+      var signUpButton = document.getElementById("signUpButton");
+      if (signUpButton) {
+        signUpButton.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+
+      var signInButton = document.getElementById("signInButton");
+      if (signInButton) {
+        signInButton.addEventListener("click", function (e) {
+          window.location.href = "./sign-in.html";
+        });
+      }
+
+      var sHIFTSYNCContainer = document.getElementById("sHIFTSYNCContainer");
+      if (sHIFTSYNCContainer) {
+        sHIFTSYNCContainer.addEventListener("click", function (e) {
+          window.location.href = "./employer-homepage.html";
+        });
+      }
+      </script>
+</body>
+</html>

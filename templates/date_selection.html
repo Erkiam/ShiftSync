@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Selection</title>
+</head>
+<body>
+    <form action="/date_selection" method="post">
+        <label for="employee">Select Employee:</label><br>
+        <select name="employee" id="employee">
+            <!-- Options will be populated from the server -->
+            {% for employee in employees %}
+                <option value="{{ employee.EmployeeID }}">{{ employee.FirstName }} {{ employee.LastName }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="date">Select Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

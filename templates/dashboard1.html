@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Weekly Schedule</h1>
+    {% for date, employees in dates.items() %}
+        <h3>{{ date.strftime('%A, %B %d, %Y') }}</h3>
+        {% if employees %}
+            <ul>
+            {% for employee in employees %}
+                <li>{{ employee }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No employees in-office for this day.</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
